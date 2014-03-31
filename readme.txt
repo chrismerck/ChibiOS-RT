@@ -89,8 +89,28 @@
 *****************************************************************************
 
 *** 2.7.0 ***
+- FIX: Fixed wrong STM32F4 TIM6 vector number symbol (bug #480)
+  (backported to 2.6.4).
+- FIX: Fixed problem in STM32 SDADC driver initialization (bug #479)
+  (backported to 2.6.4).
+- FIX: Fixed chThdShouldTerminate() documentation incorrect (bug #478)
+  (backported to 2.6.4).
+- FIX: Fixed spurious callback in STM32 EXT driver (bug #477)(backported
+  to 2.6.4).
+- FIX: Fixed several macro errors in STM32L1xx HAL driver (bug #476)
+  (backported to 2.6.4).
+- FIX: Fixed wrong STM32 RTCv2 alarms implementation (bug #475)(backported
+  to 2.6.4).
+- FIX: Fixed wrong ADC34 macros in STM32F30x HAL driver (bug #474)
+  (backported to 2.6.4).
+- FIX: Fixed wrong TIM1 and TIM8 macros in STM32F30x HAL driver (bug #473)
+  (backported to 2.6.4).
+- FIX: Fixed STM32 SDC driver clock activation issue (bug #464)(backported to
+- FIX: Fixed simulated IO message is corrupted in simulator (bug #468)
+  (backported to 2.6.4).
 - FIX: Fixed TM32 SDC driver clock activation issue (bug #464)(backported to
   2.6.3).
+- FIX: Fixed can_lld.c referencing unknown type (bug #463).
 - FIX: Fixed spurious callback in ICU driver (bug #461)(backported to 2.6.3
   and 2.4.6).
 - FIX: Fixed compile error in STM32F0xx ADC driver when STM32F0XX_LD devices
